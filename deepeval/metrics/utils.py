@@ -84,4 +84,4 @@ def initialize_model(
 def fixJson(json_str, model: Optional[Union[str, DeepEvalBaseLLM, GPTModel]] = None):
     prompt = f"fix this json and return only json : ````{json_str}```"
     res = model.generate(prompt)
-    return prompt
+    return res
